@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Your Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            width: 100px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 0 auto 20px;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="content">
+            <p>Dear <span>{{name}}</span>,</p>
+            <h1>Verify Your Email Address</h1>
+            <p>Thank you for signing up with us! Please click the button below to verify your email address and complete the registration process.</p>
+            <a href="{{link}}" class="button">Verify Email</a>
+            <p>If you did not sign up for this account, you can ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
